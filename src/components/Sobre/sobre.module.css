@@ -1,0 +1,43 @@
+
+.container{
+    background-color: var(--marinho);
+   .tarjeta {
+        /* background-image: url('/path/to/tarjeta_ajustada.png');  */
+        background-repeat: repeat-x;
+        background-size: cover 60px; 
+        height: 60px;
+        width: 100%;
+        
+    }
+    .sobre_container{
+        background-color: var(--marinho);
+        color: var(--cinza);
+        display: flex;
+        flex-wrap: wrap;
+        font-family: "Dela Gothic One", sans-serif;
+        padding: 60px;
+        gap: 32px;
+        justify-content: space-evenly;
+        .horarios, .logo, .sobre, .redes{
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .redes {
+            .options{
+                display: flex;
+                align-items: center;
+            }
+        }
+        p{
+            font-family: 'Poppins';
+            font-weight: 400;
+        }
+        .logo{
+            img{
+                width: 100px;
+            }
+        }
+    }
+}

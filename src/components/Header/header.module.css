@@ -1,0 +1,115 @@
+.header{
+    padding: 12px;
+    .header_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 52px;
+        .ham_container{
+            display: none;
+        }
+        .options_ul{
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            gap: 32px;
+            a{
+                text-decoration: none;
+                color: var(--marinho)
+            }
+        }
+        .localizacao_container{
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            img{
+                position: relative;
+                right: 24px;
+            }
+            input {
+                padding: 16px 8px;
+                max-width: 100%;
+                width: 212px;
+                border: none;
+                border-radius: 8px;
+                background-color: var(--cinza);
+            };
+        }
+        .botoes_container{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            button{
+                display: flex;
+                align-items: center;
+                padding: 8px 12px;
+                border: none;
+                border-radius: 8px;
+                background-color: transparent;
+                img{
+                    width: 20px;
+                }
+            }
+            button:hover{
+                background-color: var(--cinza);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* tablet screen */
+
+@media (max-width: 1024px) {
+    .header {
+        .header_container {
+            gap: 30px;
+
+            .localizacao_container {
+                position: absolute;
+                width: 85%;
+                top: 68px;
+                input{
+                    width: 100%;
+                }
+            }
+
+            .options_ul {
+                gap: 20px;
+                li {
+                    width: auto;
+                    a {
+                        font-size: 16px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .botoes_container {
+                gap: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        .header_container{
+            .ham_container{
+                display: block;
+            }
+            .ham_menu{
+                 cursor: pointer;
+                 padding: 8px;
+                 border-radius: 4px;
+                 &:hover{
+                    background-color: var(--cinza);
+                 }
+            }
+
+            .options_ul{
+                display: none;
+            }
+        }
+    }
+}

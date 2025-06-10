@@ -1,0 +1,43 @@
+.container{
+    background-color: var(--azul-claro);
+    img{
+        width: 100%;
+        height: auto;
+        
+    }
+    .descontos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 40px;
+        background-color: var(--azul-claro);
+        h1{
+            font-family: var(--font-dela-gothic);
+            font-size: 20px;
+        }
+        .descontos_input{
+            display: flex;
+            gap: 12px;
+            input{
+                border: 1px solid;
+                padding: 8px;
+                width: 240px;
+                background-color: transparent;
+                border-radius: 4px;
+                color: var(--marinho);
+            }
+            input::placeholder{
+                color: var(--marinho);
+            }
+            button{
+                border-radius: 4px;
+                cursor: pointer;
+                border: 1px solid;
+                padding: 8px;
+                background-color: var(--marinho);
+                color: var(--azul-claro);
+            }
+        }
+    }
+}

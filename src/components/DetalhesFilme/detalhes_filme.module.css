@@ -1,0 +1,81 @@
+.container{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .container_filme{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        .detalhes_filme{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .detalhes_filme_conteudo{
+                display: flex;
+                flex-direction: column;
+                h1{
+                    font-family: var(--font-dela-gothic);
+                    margin-bottom: 32px;
+                    font-size: 32px;
+                }
+                .detalhes_tempo_tipo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .detalhes_direcao{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 8px;
+                gap: 12px;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+        .detalhes_trailer{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap:  28px;
+            img{
+                width: 200px;
+                height: auto;
+            }
+            button{
+                background-color: var(--marinho);
+                color: var(--cinza);
+                padding: 8px;
+                border-radius: 4px;
+                border: none;
+                font-size: 16px;
+            }
+        }
+    }
+    .sinopse{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-top: 12px;
+        width:70%;
+        gap: 12px;
+        h1{
+            font-family: var(--font-dela-gothic);
+        }
+        p{
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+}

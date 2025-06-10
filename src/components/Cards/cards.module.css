@@ -1,0 +1,15 @@
+.container {
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    h1{
+        margin-bottom: 12px;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: var(--font-dela-gothic);
+    }
+}

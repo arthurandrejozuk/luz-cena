@@ -1,0 +1,13 @@
+.banner_container{
+    img{
+        width: 100%;
+    };
+}
+
+@media(max-width: 1024px){
+    .banner_container{
+        img{
+            margin-top: 80px;
+        }
+    }
+}

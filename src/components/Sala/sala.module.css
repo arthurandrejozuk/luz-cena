@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: var(--cinza);
+    max-width: 300px;
+    width: 100%;
+    margin-top: 24px;
+    .sala{
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+        .sala_info_idade{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+            .idade{
+                background-color: var(--amarelo);
+                padding: 4px 6px;
+                border-radius: 4px;
+            }
+        }
+    }
+    .horario{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            background-color: var(--marinho);
+            padding: 4px;
+            border-radius: 4px;
+            color: var(--cinza-medio);
+        }
+        button{
+            border: none;
+            background-color: var(--marinho);
+            padding: 4px 8px;
+            cursor: pointer;
+            border-radius: 4px;
+            color: var(--cinza);
+        }
+    }
+}

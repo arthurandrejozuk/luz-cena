@@ -1,0 +1,84 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .sessoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        gap: 8px;
+        margin-bottom: 16px;
+        h1{
+            font-family: var(--font-dela-gothic);
+        }
+        .date_location{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-wrap: wrap;
+            gap: 12px;
+            .localizacao_container{
+                display: flex;
+                align-items: center;
+                img{
+                    position: relative;
+                    right: 22px;
+                }
+            }
+            input{
+                width: 240px;
+                border-radius: 4px;
+                padding: 8px 12px;
+                background-color: var(--cinza);
+                border: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 762px){
+    .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .sessoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 16px;
+        h1{
+            font-family: var(--font-dela-gothic);
+        }
+        .date_location{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            .localizacao_container{
+                display: flex;
+                align-items: center;
+                margin-left: 12px;
+                img{
+                    position: relative;
+                    right: 22px;
+                }
+            }
+            input{
+                width: 240px;
+                border-radius: 4px;
+                padding: 8px 12px;
+                background-color: var(--cinza);
+                border: none;
+            }
+        }
+    }
+}
+}
