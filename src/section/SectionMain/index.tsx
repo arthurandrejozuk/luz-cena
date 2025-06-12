@@ -2,10 +2,14 @@ import { useEffect, useState } from "react";
 import Lupa from "../../assets/icons/search.png";
 import styles from "./section.module.css";
 import Cards from "../../components/Cards";
+import useFilterMovies from "../../hooks/useFilterMovies";
+import useFetchMovies from "../../hooks/useFetchMovies";
 
 export default function SectionMain() {
     const [hash, setHash] = useState(window.location.hash);
     const [destaque, setDestaque] = useState("Em cartaz")
+    const { movies, error, isLoading } = useFetchMovies();
+    const { handleSearch, setSearchTerm, searchTerm, filtered } = useFilterMovies(movies);
 
     useEffect(() => {
         const handleHashChange = () => {
@@ -52,11 +56,13 @@ export default function SectionMain() {
                     </li>
                 </ul>
                 <div className={styles.busca_container}>
-                    <input type="text" placeholder="Digite sua busca" />
-                    <img src={Lupa} />
+                    <input value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} type="text" placeholder="Digite sua busca" />
+                    <img src={Lupa} onClick={handleSearch}/>
                 </div>
             </div>
-            <Cards destaque={destaque}/>
+            {isLoading && <p>Carregando...</p>}
+            {error && <p>{error}</p>}
+            <Cards movies={filtered} destaque={destaque}/>
         </section>
     );
 }

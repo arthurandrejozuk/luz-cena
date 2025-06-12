@@ -5,7 +5,14 @@
     margin-bottom: 32px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
+    .filmes{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
     h1{
         margin-bottom: 12px;
         font-size: 24px;

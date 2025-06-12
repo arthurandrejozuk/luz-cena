@@ -1,0 +1,19 @@
+.botao {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.default {
+  color: var(--cinza);
+  background-color: var(--cinza-escuro);
+}
+
+.icon {
+  background: none;
+  font-size: 12px;
+  border: none;
+  padding: 0.5rem;
+  color: #333;
+}

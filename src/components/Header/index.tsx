@@ -1,12 +1,13 @@
 
-import Logo from "../../assets/logo/Logo.png";
-import LocationOn from "../../assets/icons/location_on.png";
+import LogoImg from "../../assets/logo/Logo.png";
 import Carrinho from "../../assets/icons/Carrinho.png";
 import Perfil from "../../assets/icons/Perfil.png";
 import styles from "./header.module.css"
 import Ham from "../../assets/icons/menu.png"
 import Menu from "../Menu";
 import { useState } from "react";
+import HeaderFormFIlter from "./components/HeaderFormFIlter";
+import Logo from "../Logo";
 
 export default function Header(){
 
@@ -14,12 +15,26 @@ export default function Header(){
 
     return(
         <header className={styles.header}>
+            {/* <HeaderList>
+                <HeaderItem>
+                    <Logo src={LogoImg}/>
+                </HeaderItem>
+                <HeaderItem>
+                    <HeaderLinks/>
+                </HeaderItem>
+                <HeaderItem>
+                    <HeaderFormFIlter/>
+                </HeaderItem>
+                <HeaderItem>
+                    <HeaderActions/>
+                </HeaderItem>
+            </HeaderList> */}
             <div className={styles.header_container}>
                 <div className={styles.ham_container}>
                     <img onClick={() => setActive(!active)} className={styles.ham_menu} src={Ham}/>
                     <Menu active={active}/>
                 </div>
-                <img src={Logo} alt="Logo Luz e Cena" />
+                <Logo src={LogoImg}/>
                 <ul className={styles.options_ul}>
                     <li>
                         <a href="">
@@ -38,8 +53,7 @@ export default function Header(){
                     </li>
                 </ul>
                 <div className={styles.localizacao_container}>
-                    <input type="text" />
-                    <img src={LocationOn} alt="Localização ativada" />
+                     <HeaderFormFIlter/>
                 </div>
                 <div className={styles.botoes_container}>
                     <button>

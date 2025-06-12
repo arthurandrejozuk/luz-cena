@@ -1,21 +1,32 @@
-import Thumb from "../../assets/thumb/cartaz.png"
-import Card from "../Card";
+
+import Card, { type ICard } from "../Card";
 import styles from "./cards.module.css";
 
-export default function Cards({destaque}:{destaque:string}){
+
+export default function Cards({destaque, movies}:{destaque:string, movies: ICard[]}){
+    
+
     return(
         <div className={styles.container}>
             <h1>
                 {destaque}
             </h1>
-            <Card 
-                src={Thumb} 
-                title="Amigos da Sombra"
-                genre="Suspense"
-                time="110"
-                videoType="2D"
-                yearsOld="12"
-            />
+            <div className={styles.filmes}>
+                {movies.map(movie => {
+                    return(
+                        <Card 
+                            title={movie.title}
+                            alt={movie.alt}
+                            genre={movie.genre}
+                            videoType={movie.genre}
+                            src={movie.src}
+                            censura={movie.censura}
+                            time={movie.time}
+                            id={movie.id}
+                        />
+                    )
+                }) }
+            </div>
         </div>
     )
 }

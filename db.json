@@ -1,0 +1,84 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "src": "https://github.com/alura-cursos/4472-react-ts/blob/aula-02/public/capas_de_filmes/amanhecer.png?raw=true",
+            "alt": "Imagem do filme Amanhecer",
+            "title": "Amanhecer",
+            "videoType": "2D",
+            "censura": "Livre",
+            "genre": "Romance",
+            "time": 90
+        },
+        {
+            "id": 2,
+            "src": "https://github.com/alura-cursos/4472-react-ts/blob/aula-02/public/capas_de_filmes/amigo_da_sombra.png?raw=true",
+            "alt": "Imagem do filme Amigo da sombra",
+            "title": "Amigo da sombra",
+            "videoType": "2D",
+            "censura": "12 anos",
+            "genre": "Suspense",
+            "time": 110
+        },
+        {
+            "id": 3,
+            "src": "https://github.com/alura-cursos/4472-react-ts/blob/aula-02/public/capas_de_filmes/amigos_do_bosque_magico.png?raw=true",
+            "alt": "Imagem do filme Amigo do bosque mágico",
+            "title": "Amigo do bosque mágico",
+            "videoType": "2D",
+            "censura": "Livre",
+            "genre": "Animação",
+            "time": 60
+        },
+        {
+            "id": 4,
+            "src": "https://github.com/alura-cursos/4472-react-ts/blob/aula-02/public/capas_de_filmes/caminho_para_o_abismo.png?raw=true",
+            "alt": "Imagem do filme Caminho para o abismo",
+            "title": "Caminho para o abismo",
+            "videoType": "2D",
+            "censura": "14 anos",
+            "genre": "Horror",
+            "time": 103
+        },
+        {
+            "id": 5,
+            "src": "https://github.com/alura-cursos/4472-react-ts/blob/aula-02/public/capas_de_filmes/desastres_do_escritorio.png?raw=true",
+            "alt": "Imagem do filme Desastres do Escritório",
+            "title": "Desastres do Escritório",
+            "videoType": "2D",
+            "censura": "Livre",
+            "genre": "Comédia",
+            "time": 85
+        },
+        {
+            "id": 6,
+            "src": "https://github.com/alura-cursos/4472-react-ts/blob/aula-02/public/capas_de_filmes/la_Esperanza.png?raw=true",
+            "alt": "Imagem do filme Mestres do Futuro",
+            "title": "Mestres do Futuro",
+            "videoType": "2D",
+            "censura": "Livre",
+            "genre": "Documentário",
+            "time": 120
+        },
+        {
+            "id": 7,
+            "src": "https://github.com/alura-cursos/4472-react-ts/blob/aula-02/public/capas_de_filmes/mestres_do_futuro.png?raw=true",
+            "alt": "Imagem do filme La Esperanza",
+            "title": "La Esperanza",
+            "videoType": "2D",
+            "censura": "12 anos",
+            "genre": "Drama",
+            "time": 98
+        },
+        {
+            "id": 8,
+            "src": "https://github.com/alura-cursos/4472-react-ts/blob/aula-02/public/capas_de_filmes/o_nexus_do_tempo.png?raw=true",
+            "alt": "Imagem do filme O nexus do tempo",
+            "title": "O nexus do tempo",
+            "videoType": "3D",
+            "censura": "10 anos",
+            "genre": "Ficcção Científica",
+            "time": 105
+        }
+    ]
+}
