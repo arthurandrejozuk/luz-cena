@@ -8,7 +8,7 @@
         .ham_container{
             display: none;
         }
-        .options_ul{
+        /* .options_ul{
             display: flex;
             align-items: center;
             padding: 8px;
@@ -17,10 +17,8 @@
                 text-decoration: none;
                 color: var(--marinho)
             }
-        }
+        } */
         .localizacao_container{
-            display: flex;
-            align-items: center;
             padding: 12px;
             img{
                 position: relative;
@@ -35,7 +33,22 @@
                 background-color: var(--cinza);
             };
         }
-        .botoes_container{
+    }
+} 
+
+ .options_ul{
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            gap: 32px;
+            a{
+                text-decoration: none;
+                color: var(--marinho)
+            }
+        }
+
+
+ .botoes_container{
             display: flex;
             align-items: center;
             gap: 24px;
@@ -55,8 +68,6 @@
                 cursor: pointer;
             }
         }
-    }
-} 
 
 /* tablet screen */
 

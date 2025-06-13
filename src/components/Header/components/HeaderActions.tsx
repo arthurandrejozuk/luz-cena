@@ -1,15 +1,16 @@
-import React from 'react'
+
 import Button from '../../Button'
 import { HiOutlineShoppingCart, HiOutlineUser } from 'react-icons/hi'
+import styles from "../header.module.css";
 
 const HeaderActions = () => {
   return (
-    <div>
+    <div className={styles.botoes_container}>
       <Button variant='icon'>
-        <HiOutlineShoppingCart/>
+        <HiOutlineShoppingCart size={24}/>
       </Button>
       <Button variant='icon'>
-        <HiOutlineUser/>
+        <HiOutlineUser size={24}/>
       </Button>
     </div>
   )

@@ -1,6 +1,7 @@
 .container {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 .icone {
@@ -21,4 +22,11 @@
   cursor: pointer;
   background-color: var(--cinza);
   color: var(--marinho);
+}
+
+
+@media(max-width: 1024px){
+  .selector{
+    width: 100%;
+  }
 }

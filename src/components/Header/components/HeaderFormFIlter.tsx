@@ -1,4 +1,3 @@
-import React from 'react'
 import SelectorGroup from '../../Selector/SelectorGroup'
 import { FaLocationDot } from 'react-icons/fa6'
 import SelectorOption from '../../Selector/SelectorOptions'
@@ -11,7 +10,7 @@ import SelectorOption from '../../Selector/SelectorOptions'
     { id: 5, nome: "Porto Alegre" },
 ];
 
-const HeaderFormFIlter = () => {
+const HeaderFormFilter = () => {
    
   return (
     <form>
@@ -31,4 +30,4 @@ const HeaderFormFIlter = () => {
   )
 }
 
-export default HeaderFormFIlter
+export default HeaderFormFilter
